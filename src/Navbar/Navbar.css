@@ -1,0 +1,111 @@
+.navbar {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar-toggler-icon {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px !important;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0 !important;
+  padding: 0px !important;
+
+}
+
+.nav-links li {
+  font-size: 18px;
+  padding: 0px !important;
+  padding-top: 10px !important;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  padding: 0px !important;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: rgb(235, 78, 104);
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  border-radius: 5px;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after
+ {
+  width: 100%;
+}
+.gitImg {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 50px;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column !important;
+    width: 100%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}

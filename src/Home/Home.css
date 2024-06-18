@@ -1,0 +1,69 @@
+.Heading {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+
+#typewriter {
+   color: rgb(230, 163, 40);
+}
+
+.handImg {
+   height: 50px !important;
+   animation: wave 2s infinite;
+   transform-origin: bottom center;
+}
+
+@keyframes wave {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   20% {
+      transform: rotate(-20deg);
+   }
+
+   40% {
+      transform: rotate(10deg);
+   }
+
+   60% {
+      transform: rotate(-10deg);
+   }
+
+   80% {
+      transform: rotate(20deg);
+   }
+
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+.homeImg {
+   animation: jump 5s ease-in-out infinite;
+   transition: all 5s ease-in-out;
+}
+
+@keyframes jump {
+   0% {
+      transform: translateY(0px);
+   }
+
+   25% {
+      transform: translateY(-20px);
+   }
+
+   50% {
+      transform: translateY(0px);
+   }
+
+   75% {
+      transform: translateY(-20px);
+   }
+
+   100% {
+      transform: translateY(0px);
+   }
+}
